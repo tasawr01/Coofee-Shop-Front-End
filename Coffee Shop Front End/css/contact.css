@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    background-color: black;
+    height: 70px;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    margin-right: 45px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: burlywood;
+    padding: 5px 20px;
+    border: transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: burlywood;
+    color: black;
+    border-radius: 20px;
+}
+ul li.active a{
+    background-color: burlywood;
+    color: black;
+    border-radius: 20px;
+}
+.logo img{
+    margin-top: 15px;
+    margin-left: 45px;
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.content{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: burlywood;
+    height: 89vh;
+    border: 1px solid black;
+}
+.text{
+    font-size: 70px;
+    padding-top: 40px;
+    text-align: center;
+    color: black;
+}
+.container{
+    display: flex;
+    margin-top: 10px;
+    background: #fff;
+    width: 500px;
+    height: 340px;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+.contact{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.heading{
+    font-size: 20px;
+    color: burlywood;
+}
+.contactform{
+    margin-top: 10px;
+    margin-left: 150px;
+}
+.contactform h2{
+    font-size: 30px;
+    color: burlywood;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid burlywood;
+    outline: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: black;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+    color: black;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background-color: burlywood;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 10px 20px;
+    border-radius: 30px;
+}
